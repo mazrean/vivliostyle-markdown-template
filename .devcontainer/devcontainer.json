@@ -9,5 +9,8 @@
       "extensions": ["james-yu.latex-workshop", "ics.japanese-proofreading"]
     }
   },
+  "workspaceFolder": "/workspace", 
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+  "postCreateCommand": "npm ci",
   "postStartCommand": "./script/hot-reload.sh index.md style.css dist/output.pdf"
 }
