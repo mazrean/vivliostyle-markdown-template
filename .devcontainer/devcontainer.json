@@ -1,0 +1,13 @@
+{
+  "name": "vivliostyle-markdown-template",
+  "build": {
+    "context": "..",
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["james-yu.latex-workshop", "ics.japanese-proofreading"]
+    }
+  },
+  "postStartCommand": "./script/hot-reload.sh index.md style.css dist/output.pdf"
+}
