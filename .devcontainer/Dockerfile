@@ -40,7 +40,7 @@ RUN apt-get update && apt-get install -y \
     libnss3-dev \
     && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /workspaces/vivliostyle-markdown-template
+WORKDIR /workspace
 COPY package.json package-lock.json ./
 RUN npm ci
 
